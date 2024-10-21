@@ -1,4 +1,4 @@
-package com.codingtest.codingtest.프로그래머스.해시;
+package com.codingtest.codingtest.프로그래머스.해시.level1;
 
 
 import java.util.*;
@@ -42,7 +42,7 @@ import java.util.*;
  */
 
 
-public class 완주하지못한선수level1 {
+public class 완주하지못한선수 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();

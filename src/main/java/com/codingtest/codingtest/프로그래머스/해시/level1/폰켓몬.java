@@ -1,4 +1,4 @@
-package com.codingtest.codingtest.프로그래머스.해시;
+package com.codingtest.codingtest.프로그래머스.해시.level1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,7 @@ import java.util.List;
  * 가장 많은 종류의 폰켓몬을 고르기 위해서는 3번 폰켓몬 한 마리와 2번 폰켓몬 두 마리를 고르거나,
  * 혹은 3번 폰켓몬 두 마리와 2번 폰켓몬 한 마리를 고르면 됩니다. 따라서 최대 고를 수 있는 폰켓몬 종류의 수는 2입니다.
  */
-public class 폰켓몬level1 {
+public class 폰켓몬 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
