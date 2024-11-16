@@ -29,29 +29,34 @@ import java.util.Scanner;
  * S#T!EG*b@a
  */
 public class 특정문자뒤집기 {
+//kdj#@kdjg%$#kdjgk@kd$dk
+//kdd#@kkgj%$#dkgjd@kj$dk
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int input1 = in.nextInt();
+        String input1 = in.next();
 
-        String[] arr = new String[input1];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = in.next();
-        }
-        solution(arr);
-    }
-
-    /**
-     * 전체 뒤집기
-     * @param arr
-     */
-    public static void solution(String[] arr) {
-        StringBuilder sb;
-        for (int i = 0; i < arr.length; i++) {
-            sb = new StringBuilder(arr[i]);
-            System.out.println(sb.reverse());
-        }
+        System.out.println(solution(input1));
     }
 
 
+    public static String solution(String arr) {
+        char[] chr = arr.toCharArray();
+        int lp = 0;
+        int rp = chr.length - 1;
+        while (lp < rp) {
+            if (!Character.isLetter(chr[lp])) {
+                lp++;
+            } else if (!Character.isLetter(chr[rp])) {
+                rp--;
+            } else {
+                char tmp = chr[lp];
+                chr[lp] = chr[rp];
+                chr[rp] = tmp;
+                lp++;
+                rp--;
+            }
+        }
+        return String.valueOf(chr);
+    }
 }

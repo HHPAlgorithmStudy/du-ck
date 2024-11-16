@@ -34,7 +34,7 @@ import java.util.Scanner;
  * giB
  *
  */
-public class 단어뒤집기 {
+public class 단어뒤집기__ {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
