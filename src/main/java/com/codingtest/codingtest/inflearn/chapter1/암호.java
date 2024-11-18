@@ -1,5 +1,5 @@
 
-package com.codingtest.codingtest.inflearn;
+package com.codingtest.codingtest.inflearn.chapter1;
 
 
 
