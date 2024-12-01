@@ -56,10 +56,9 @@ public class 학급회장_해쉬 {
         HashMap<Character, Integer> voteMap = new HashMap<>();
 
         for (char vote : voteResult.toCharArray()) {
-
             voteMap.put(vote, voteMap.getOrDefault(vote, 0) + 1);
         }
-
+        
         int count = 0;
         char answer = 0;
         for (Map.Entry<Character, Integer> item : voteMap.entrySet()) {
